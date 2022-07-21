@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Golos-Text_Bold.ttf">
+            <string>GolosText-Bold</string>
+        </array>
+        <array key="Golos-Text_DemiBold.ttf">
+            <string>GolosText-DemiBold</string>
+        </array>
+        <array key="Golos-Text_Regular.ttf">
+            <string>GolosText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Complain View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="JJComplainViewController" customModule="JoyJet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiu-ns-kJn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="76"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDf-Tj-6UQ" customClass="JJButton" customModule="JoyJet" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="16" width="48" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="AoL-32-Jwb"/>
+                                            <constraint firstAttribute="height" constant="48" id="JUD-HA-U3A"/>
+                                        </constraints>
+                                        <state key="normal" image="back_icon">
+                                            <color key="titleColor" name="secondaryBlack"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.015686274510000001" green="0.016000000760000001" blue="0.082000002259999996" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onBack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="O4j-4M-gKi"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(en)Add your comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gv-KZ-ekw">
+                                        <rect key="frame" x="112" y="16" width="198" height="44"/>
+                                        <fontDescription key="fontDescription" name="GolosText-DemiBold" family="Golos" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="Complaint.addComment"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="0Gv-KZ-ekw" firstAttribute="centerY" secondItem="eiu-ns-kJn" secondAttribute="centerY" id="7Bq-40-oOU"/>
+                                    <constraint firstItem="0Gv-KZ-ekw" firstAttribute="top" secondItem="aDf-Tj-6UQ" secondAttribute="top" id="CXG-6v-4ey"/>
+                                    <constraint firstItem="0Gv-KZ-ekw" firstAttribute="leading" secondItem="aDf-Tj-6UQ" secondAttribute="trailing" constant="24" id="Jep-9Z-3od"/>
+                                    <constraint firstItem="aDf-Tj-6UQ" firstAttribute="leading" secondItem="eiu-ns-kJn" secondAttribute="leading" constant="40" id="MR5-Qb-8jc"/>
+                                    <constraint firstItem="aDf-Tj-6UQ" firstAttribute="top" secondItem="eiu-ns-kJn" secondAttribute="top" constant="16" id="a9Y-1H-d3V"/>
+                                    <constraint firstAttribute="height" constant="76" id="yFP-AB-Icv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pW9-mF-KdG" customClass="JJView" customModule="JoyJet" customModuleProvider="target">
+                                <rect key="frame" x="40" y="198" width="334" height="112"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HIr-Up-3rk" customClass="JJTextView" customModule="JoyJet" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="12" width="294" height="88"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="BLB-p5-OMh"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="WuR-Nd-XTR"/>
+                                        </connections>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="HIr-Up-3rk" secondAttribute="bottom" constant="12" id="XHX-m9-bmk"/>
+                                    <constraint firstItem="HIr-Up-3rk" firstAttribute="leading" secondItem="pW9-mF-KdG" secondAttribute="leading" constant="20" id="ggR-KR-AfX"/>
+                                    <constraint firstAttribute="trailing" secondItem="HIr-Up-3rk" secondAttribute="trailing" constant="20" id="ilu-ga-MBB"/>
+                                    <constraint firstItem="HIr-Up-3rk" firstAttribute="top" secondItem="pW9-mF-KdG" secondAttribute="top" constant="12" id="rKa-TG-lWX"/>
+                                    <constraint firstAttribute="height" constant="112" id="tGe-sI-1Jo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.60784313729999995" green="0.60784313729999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fl8-ck-Dsw" customClass="JJButton" customModule="JoyJet" customModuleProvider="target">
+                                <rect key="frame" x="40" y="336" width="334" height="56"/>
+                                <color key="backgroundColor" name="primaryOrange"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="onE-S2-iQE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GolosText-DemiBold" family="Golos" pointSize="14"/>
+                                <state key="normal" title="(en)Confirm">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="Common.Confirm"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onConfirm:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eTD-qS-gbX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(#)You can describe the reason in more detail or leave this field blank." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wf2-W9-XLb">
+                                <rect key="frame" x="40" y="142" width="334" height="36"/>
+                                <fontDescription key="fontDescription" name="GolosText-Regular" family="Golos" pointSize="15"/>
+                                <color key="textColor" red="0.40784313725490196" green="0.40784313725490196" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="Complaint.description"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fl8-ck-Dsw" secondAttribute="trailing" constant="40" id="35H-vh-gLe"/>
+                            <constraint firstItem="eiu-ns-kJn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="W57-7Z-tsO"/>
+                            <constraint firstItem="pW9-mF-KdG" firstAttribute="top" secondItem="wf2-W9-XLb" secondAttribute="bottom" constant="20" id="cN3-XK-exJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pW9-mF-KdG" secondAttribute="trailing" constant="40" id="eWW-Dl-5bu"/>
+                            <constraint firstItem="pW9-mF-KdG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="g4k-bY-sdB"/>
+                            <constraint firstItem="fl8-ck-Dsw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="gHW-cj-6ed"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wf2-W9-XLb" secondAttribute="trailing" constant="40" id="iUm-G0-q6S"/>
+                            <constraint firstItem="eiu-ns-kJn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="s7A-8B-bwJ"/>
+                            <constraint firstItem="wf2-W9-XLb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="tED-82-Gav"/>
+                            <constraint firstItem="fl8-ck-Dsw" firstAttribute="top" secondItem="pW9-mF-KdG" secondAttribute="bottom" constant="26" id="yTm-Lq-7VQ"/>
+                            <constraint firstItem="eiu-ns-kJn" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="ypj-cx-4aX"/>
+                            <constraint firstItem="wf2-W9-XLb" firstAttribute="top" secondItem="eiu-ns-kJn" secondAttribute="bottom" constant="22" id="zxa-nL-G0e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmButton" destination="fl8-ck-Dsw" id="N1Q-lg-n1O"/>
+                        <outlet property="textView" destination="HIr-Up-3rk" id="R1S-ul-8rM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="72"/>
+        </scene>
+        <!--Complain Success-->
+        <scene sceneID="ISS-m6-826">
+            <objects>
+                <viewController storyboardIdentifier="JJComplainSuccess" id="Pfh-rp-5U7" customClass="JJComplainSuccess" customModule="JoyJet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pd5-fb-w9x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhX-dA-Tfj" customClass="JJButton" customModule="JoyJet" customModuleProvider="target">
+                                <rect key="frame" x="40" y="786" width="334" height="56"/>
+                                <color key="backgroundColor" name="primaryOrange"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="opH-wq-h59"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GolosText-DemiBold" family="Golos" pointSize="14"/>
+                                <state key="normal" title="(en)Confirm">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="Common.OK"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onConfirm:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Z5u-oU-TMe"/>
+                                    <action selector="onDone:" destination="Pfh-rp-5U7" eventType="touchUpInside" id="mNo-0W-X5g"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="complaint_success_image" translatesAutoresizingMaskIntoConstraints="NO" id="vKr-6D-cSk">
+                                <rect key="frame" x="97" y="156" width="220" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="89U-GG-hbf"/>
+                                    <constraint firstAttribute="width" constant="220" id="s7e-U8-rQm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(#)You can describe the reason in more detail or leave this field blank." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vr-PY-3An">
+                                <rect key="frame" x="40" y="493" width="334" height="36"/>
+                                <fontDescription key="fontDescription" name="GolosText-Regular" family="Golos" pointSize="15"/>
+                                <color key="textColor" red="0.40784313729999999" green="0.40784313729999999" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="Complaint.result.description"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(#)Thanks" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5UO-7s-Zf1">
+                                <rect key="frame" x="40" y="440" width="334" height="29"/>
+                                <fontDescription key="fontDescription" name="GolosText-Bold" family="Golos" pointSize="24"/>
+                                <color key="textColor" name="secondaryBlack"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="Complaint.result.title"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pj3-68-apS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vKr-6D-cSk" firstAttribute="centerX" secondItem="Pd5-fb-w9x" secondAttribute="centerX" id="8jv-jG-hyi"/>
+                            <constraint firstItem="9Vr-PY-3An" firstAttribute="top" secondItem="5UO-7s-Zf1" secondAttribute="bottom" constant="24" id="EAT-HK-9Oc"/>
+                            <constraint firstItem="Pj3-68-apS" firstAttribute="bottom" secondItem="FhX-dA-Tfj" secondAttribute="bottom" constant="20" id="Pdd-4m-Caa"/>
+                            <constraint firstItem="FhX-dA-Tfj" firstAttribute="leading" secondItem="Pj3-68-apS" secondAttribute="leading" constant="40" id="RPX-fy-8bj"/>
+                            <constraint firstItem="vKr-6D-cSk" firstAttribute="top" secondItem="Pj3-68-apS" secondAttribute="top" constant="112" id="SsX-Bj-bw9"/>
+                            <constraint firstItem="9Vr-PY-3An" firstAttribute="leading" secondItem="Pj3-68-apS" secondAttribute="leading" constant="40" id="bTB-ua-4wW"/>
+                            <constraint firstItem="Pj3-68-apS" firstAttribute="trailing" secondItem="9Vr-PY-3An" secondAttribute="trailing" constant="40" id="d4V-qP-f5D"/>
+                            <constraint firstItem="5UO-7s-Zf1" firstAttribute="top" secondItem="vKr-6D-cSk" secondAttribute="bottom" constant="64" id="eIJ-ny-DoC"/>
+                            <constraint firstItem="5UO-7s-Zf1" firstAttribute="leading" secondItem="Pd5-fb-w9x" secondAttribute="leading" constant="40" id="mil-Os-F4l"/>
+                            <constraint firstAttribute="trailing" secondItem="FhX-dA-Tfj" secondAttribute="trailing" constant="40" id="ms4-rQ-Gws"/>
+                            <constraint firstItem="Pj3-68-apS" firstAttribute="trailing" secondItem="5UO-7s-Zf1" secondAttribute="trailing" constant="40" id="rUw-RS-O0E"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xqq-hT-HzP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_icon" width="24" height="24"/>
+        <image name="complaint_success_image" width="228" height="228"/>
+        <namedColor name="primaryOrange">
+            <color red="0.94499999284744263" green="0.32199999690055847" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryBlack">
+            <color red="0.016000000759959221" green="0.016000000759959221" blue="0.082000002264976501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
